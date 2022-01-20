@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 .top{
     font-family: Helvetica;
     font-size:250%;
@@ -33,9 +35,8 @@ h2{
 }
 
 p{
-    font-family: Helvetica;
+    font-family: Montserrat, sans-serif;
     line-height:140%;
-
 }
 
 img{
@@ -81,5 +82,5 @@ a{
 }
 
 a:hover{
-    color:rgb(255,127,127);
+    color:rgba(255,0,127,0.6);
 }
