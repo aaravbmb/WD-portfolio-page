@@ -155,7 +155,7 @@ nav ul li a:hover{
 /* Welcome Screen (Home) Elements */
 
 #home{
-    background-image: url("/elements/background.png");
+    background-image: url("./elements/background.png");
     background-position: center;
     background-size: cover;
     margin: 0 auto;
