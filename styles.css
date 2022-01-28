@@ -155,7 +155,7 @@ nav ul li a:hover{
 /* Welcome Screen (Home) Elements */
 
 #home{
-    background-image: url("./elements/background.png");
+    background-image: url("./elements/background.svg");
     background-position: center;
     background-size: cover;
     margin: 0 auto;
@@ -168,7 +168,7 @@ nav ul li a:hover{
     #home{
         margin-top:75px;
         width: 96.5vw;
-        height: 87.5vh;
+        height: 85vh;
     }
 }
 
@@ -176,7 +176,7 @@ nav ul li a:hover{
     #home{
         margin-top: 66px;
         width: 96.75vw;
-        height: 89vh;
+        height: 82.5vh;
     }
 }
 
