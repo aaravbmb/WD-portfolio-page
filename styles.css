@@ -160,23 +160,21 @@ nav ul li a:hover{
     background-size: cover;
     margin: 0 auto;
     margin-top: 85px;
-    width: 95vw;
+    width: 96.5vw;
     height: 86.5vh;
 }
 
 @media (max-width:952px){
     #home{
         margin-top:75px;
-        width: 96.5vw;
         height: 83.5vh;
     }
 }
-
 @media (max-width:800px){
     #home{
         margin-top: 66px;
         width: 96.75vw;
-        height: 80vh;
+        height: 81.5vh;
     }
 }
 
