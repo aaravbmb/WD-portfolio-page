@@ -156,7 +156,7 @@ nav ul li a:hover{
 
 #home{
     background-image: url("./elements/background.svg");
-    background-position: center;
+    background-position: 0% 45%;
     background-size: cover;
     margin: 0 auto;
     margin-top: 85px;
@@ -164,10 +164,45 @@ nav ul li a:hover{
     height: 86.5vh;
 }
 
+.introtext{
+    height: 40vh;
+    padding-top: 15vh;
+    width: 100%;
+}
+.introtext h1{
+    text-align: center;
+    padding-bottom:2.5px;
+    color: white;
+    font-size: 70px;
+    font-family: -apple-system, BlinkMacSystemFont, Montserrat, Tahoma;
+    text-shadow: -1px -1px 0 rgb(0,0,0,75%), 1px -1px 0 rgb(0,0,0,75%), -1px 1px 0 rgb(0,0,0,75%), 1px 1px 0 rgb(0,0,0,75%);
+}
+
+.introtext h1:hover .uxanimate{
+    color: rgb(255,175,255);
+    transition: all 1s;
+}
+
+.introtext h2{
+    text-align:center;
+    color:rgb(255,245,255);
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, Montserrat, Tahoma;
+    font-weight: 300;
+    text-shadow: -1px 1px 3px black;
+}
+
 @media (max-width:952px){
     #home{
         margin-top:75px;
         height: 83.5vh;
+    }
+    .introtext h1{
+        font-size: 57.5px;
+    }
+    .introtext h2{
+        font-size: 25px;
+        text-shadow: -1px 1px 2px black;
     }
 }
 @media (max-width:800px){
@@ -175,6 +210,13 @@ nav ul li a:hover{
         margin-top: 66px;
         width: 96.75vw;
         height: 80.75vh;
+    }
+    .introtext h1{
+        font-size: 35px;
+    }
+    .introtext h2{
+        font-size: 15.25px;
+        text-shadow: -0.5px 0.5px 0.5px black;
     }
 }
 
