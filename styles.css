@@ -212,11 +212,10 @@ nav ul li a:hover{
         height: 80.75vh;
     }
     .introtext h1{
-        font-size: 35px;
+        font-size: 32.5px;
     }
     .introtext h2{
-        font-size: 15.25px;
-        text-shadow: -0.5px 0.5px 0.5px black;
+        display: none;
     }
 }
 
