@@ -156,6 +156,7 @@ nav ul li a:hover{
 
 #home{
     background-image: url("./elements/background.svg");
+    background-color: rgb(255,155,255);
     background-position: 0% 45%;
     background-size: cover;
     margin: 0 auto;
