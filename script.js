@@ -10,3 +10,5 @@ for(let i=0; i < navlist.length; i++){
 /* Update Year In Footer */
 
 document.getElementById("footeryear").innerHTML = new Date().getFullYear(); 
+
+/* Social Profile Links */

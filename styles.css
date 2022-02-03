@@ -1,11 +1,10 @@
 /* Imported Fonts & Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:wght@500;600&family=Roboto:wght@400;500&display=swap');
 
 /*Global Attributes */
 
-*{
+*, *::before, *::after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -67,7 +66,7 @@ nav ul li a{
 
 #contact{
     color: #38b6ffDD;
-    margin-right: 5px;
+    margin-right: -10px;
 }
 
 #contact:hover{
@@ -98,7 +97,131 @@ nav ul li a:hover{
     display: none;
 }
 
-@media (max-width:952px){
+/* Welcome Screen (Home) Elements */
+
+#home{
+    background-image: url("./elements/background.svg");
+    background-color: #FF00FF99;
+    background-position: 0% 45%;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 85px;
+    width: 96.5vw;
+    padding: 0 15px;
+    height: 86.5vh;
+}
+
+.introtext{
+    height: 40vh;
+    padding-top: 17.5vh;
+    font-family: -apple-system, BlinkMacSystemFont, Montserrat, Tahoma;
+    width: 100%;
+    text-align: center;
+}
+.introtext h1{
+    display: inline-block;
+    margin: -1px 0.285rem;
+    padding-bottom:2.5px;
+    color: white;
+    font-size: 70px;
+    text-shadow: -1px -1px 0 rgb(0,0,0,75%), 1px -1px 0 rgb(0,0,0,75%), -1px 1px 0 rgb(0,0,0,75%), 1px 1px 0 rgb(0,0,0,75%);
+}
+
+.introtext h1:hover .uxanimate{
+    color: rgb(255,175,255);
+    transition: all 1s;
+}
+
+.introtext h2{
+    color:rgb(255,245,255);
+    font-size: 30px;
+    font-weight: 400;
+    text-shadow: -1px 1px 3px black;
+}
+
+.hlinks{
+    float:right;
+    display:flex;
+    flex-direction: column;
+    margin-top: 12.5vh;
+}
+
+.hlinks a{
+    color: rgba(0,0,0,80%);
+    margin: 2px 0;
+}
+
+.hlinks a:hover{
+    color: black;
+    transition: 0.5s;
+}
+
+.hlinks a i{
+    font-size: 40px;
+    filter: drop-shadow(2px 2px 2px rgba(255,255,255,60%));
+}
+
+/* About Section (About) */
+
+#about{
+    background-color: #000112;
+    width: 100%;
+    color: white;
+    height: 700px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.aboutinfo{
+    /*background-color: red;*/
+    width: 70vw;
+    height: 100%;
+    padding-top: 20px;
+}
+
+.aboutpfp{
+    /*background-color: blue;*/
+    width: 30vw;
+    height: 100%;
+}
+
+.aboutpfp img{
+    display:block;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 35% auto;
+    width: 250px;
+}
+
+/* Footer Content */
+
+footer{
+    background-color: #121212;
+    padding:20px;
+    border-top: 5px solid white;
+    margin-top:30px;
+    color:#DDDDDD;
+    font-family: Helvetica;
+    font-size: 13.5px;
+    text-align: center;
+}
+
+footer hr{
+    margin: 0 10px;
+    margin-top: 17.5px;
+}
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* This is the media query for all elements on the main website page. */
+
+/* Media Query for Devices With Maximum Width: 952px */
+
+@media (max-width: 952px){
+
+    /* Navigation Bar Elements */
+
     nav{
         height:70px;
     }
@@ -112,9 +235,51 @@ nav ul li a:hover{
     nav ul li a{
         font-size: 19px;
     }
+
+    /* Welcome Screen (Home) Elements */
+
+    #home{
+        margin-top:75px;
+        height: 83.5vh;
+    }
+    .introtext h1{
+        font-size: 55px;
+    }
+    .introtext h2{
+        font-size: 25px;
+        text-shadow: -1px 1px 2px black;
+    }
+    .hlinks{
+        margin-top: 8.5vh;
+    }
+    .hlinks a{
+        margin: 1px 0;
+    }
+    .hlinks a i{
+        font-size: 40px;
+    }
+
+    /* About Section (About) */
+
+
+
+    /* Footer Content */
+
+    footer{
+        padding: 15px;
+        font-size: 12px;
+    }
+    footer hr{
+        margin-top:15px;
+    }
 }
 
-@media (max-width:800px){
+/* Media Query for Devices With Maximum Width: 800px */
+
+@media (max-width: 800px){
+
+    /* Navigation Bar Elements */
+
     .checkbtn{
         display:block;
     }
@@ -132,7 +297,7 @@ nav ul li a:hover{
         width: 100%;
         height:55vh;
         min-height: 400px;
-        background: #323232;
+        background: #232323;
         top: 65px;
         left: -100%;
         text-align: center;
@@ -150,139 +315,56 @@ nav ul li a:hover{
     #check:checked ~ ul{
         left:0;
     }
-}
 
-/* Welcome Screen (Home) Elements */
+    /* Welcome Screen (Home) Elements */
 
-#home{
-    background-image: url("./elements/background.svg");
-    background-color: rgb(255,155,255);
-    background-position: 0% 45%;
-    background-size: cover;
-    margin: 0 auto;
-    margin-top: 85px;
-    width: 96.5vw;
-    padding: 0 15px;
-    height: 86.5vh;
-}
-
-.introtext{
-    height: 40vh;
-    padding-top: 17.5vh;
-    width: 100%;
-    text-align: center;
-}
-.introtext h1{
-    display: inline-block;
-    margin: -1px 0.35rem;
-    padding-bottom:2.5px;
-    color: white;
-    font-size: 70px;
-    font-family: -apple-system, BlinkMacSystemFont, Montserrat, Tahoma;
-    text-shadow: -1px -1px 0 rgb(0,0,0,75%), 1px -1px 0 rgb(0,0,0,75%), -1px 1px 0 rgb(0,0,0,75%), 1px 1px 0 rgb(0,0,0,75%);
-}
-
-.introtext h1:hover .uxanimate{
-    color: rgb(255,175,255);
-    transition: all 1s;
-}
-
-.introtext h2{
-    color:rgb(255,245,255);
-    font-size: 30px;
-    font-family: -apple-system, BlinkMacSystemFont, Montserrat, Tahoma;
-    font-weight: 400;
-    text-shadow: -1px 1px 3px black;
-}
-
-@media (max-width:952px){
-    #home{
-        margin-top:75px;
-        height: 83.5vh;
-    }
-    .introtext h1{
-        font-size: 57.5px;
-    }
-    .introtext h2{
-        font-size: 25px;
-        text-shadow: -1px 1px 2px black;
-    }
-}
-@media (max-width:800px){
     #home{
         margin-top: 66px;
         width: 96.75vw;
         height: 80vh;
     }
     .introtext h1{
-        font-size: 42.5px;
+        font-size: 40px;
+        margin: -1px .2rem;
         padding-bottom:10px;
         margin-top: -10px;
     }
     .introtext h2{
-        font-size: 22.5px;
+        font-size: 20px;
     }
-}
-
-/* About Section (About) */
-
-#about{
-    background-color: #000112;
-    width: 100%;
-    height: 500px;
-    margin-top: 15px;
-}
-
-.picture{
-    display: block;
-    width: 130px;
-    margin: 0 auto;
-    margin-bottom: 4%;
-    margin-top: 2%;
-    border-radius: 50%;
-    border: solid rgba(0,0,0,50%);
-}
-
-.desc{
-    margin: 2% 5%;
-    font-size: 120%;
-
-}
-
-.sign{
-    margin-top:5%;
-    text-align: right;
-}
-
-/* Footer Content */
-
-footer{
-    background-color: #121212;
-    padding:20px;
-    border-top: 5px solid white;
-    margin-top:50px;
-    color:#DDDDDD;
-    font-family: Helvetica;
-    text-align: center;
-    font-size: 13px;
-}
-
-footer hr{
-    margin: 0 10px;
-    margin-top: 20px;
-}
-
-@media (max-width:952px){
-    footer{
-        padding: 15px;
-        font-size: 12px;
+    .hlinks{
+        float: none;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 32.5vh;
     }
-    footer hr{
-        margin-top:15px;
+    .hlinks a{
+        margin: 0 10px;
     }
-}
+    .hlinks a i{
+        font-size: 40px;
+        color: rgba(255,255,255,92.5%);
+        filter: drop-shadow(3px 3px 2px black);
+    }
 
-@media (max-width:800px){
+    /* About Section (About) */
+
+    .aboutinfo{
+        width:100vw;
+        height: 75%;
+    }
+    .aboutpfp{
+        width:100vw;
+        height: 25%;
+    }
+    .aboutpfp img{
+        width: 150px;
+        margin: -50px auto;
+    }
+
+    /* Footer Content */
+
     footer{
         padding:10px;
         font-size:11px;
