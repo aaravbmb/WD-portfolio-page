@@ -1,6 +1,6 @@
 /* Imported Fonts & Styles */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Open+Sans:wght@500;600&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Open+Sans:wght@500;600&family=Roboto:wght@400;500&display=swap');
 
 /*Global Attributes */
 
@@ -168,7 +168,6 @@ nav ul li a:hover{
     background-color: #000112;
     width: 100%;
     color: white;
-    height: 700px;
     margin-top: 15px;
     display: flex;
     flex-direction: row-reverse;
@@ -176,14 +175,97 @@ nav ul li a:hover{
 }
 
 .aboutinfo{
-    /*background-color: red;*/
     width: 70vw;
     height: 100%;
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.aboutinfo h2{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, Montserrat, Tahoma;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.aboutinfo hr{
+    margin: 15px 25px;
+    border: none;
+}
+
+.aboutinfo p{
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    margin: 7.5px 0;
+}
+
+.workeducation{
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+
+.collegeinfo{
+    margin-top: -15px;
+}
+.workeducation .workinfo{
+    margin-top: 22.5px;
+    margin-left: 30px;
+}
+
+.workinfo h3{
+    font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 1px auto;
+    text-decoration: none;
+}
+
+.workinfo h3 a{
+    text-decoration: none;
+    color: #FFFFFFBB;
+}
+
+.workinfo h3 a:hover{
+    color: #FFFFFFEE;
+    transition: 0.2s;
+}
+
+.workinfo h3:first-of-type{
+    font-weight: 600;
+}
+
+.workeducation img{
+    width: 100px;
+}
+
+.ecell{
+    filter: invert(1);
+}
+
+.aboutbutton{
+    background-color: #FFFFFF33;
+    width: 125px;
+    border-radius: 20px;
+    height: 40px;
+    margin: 30px auto;
+    margin-bottom: 50px;
+}
+
+.aboutbutton a{
+    color: white;
+    text-decoration: none;
+    font-family: Roboto, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 20px;
+    line-height: 38px;
 }
 
 .aboutpfp{
-    /*background-color: blue;*/
     width: 30vw;
     height: 100%;
 }
@@ -191,8 +273,10 @@ nav ul li a:hover{
 .aboutpfp img{
     display:block;
     border-radius: 50%;
-    border: 2px solid black;
-    margin: 35% auto;
+    border: 5px solid black;
+    box-shadow: 0px 0px 20px ghostwhite;
+    margin-top: 230px;
+    margin-left: 30%;
     width: 250px;
 }
 
@@ -202,7 +286,7 @@ footer{
     background-color: #121212;
     padding:20px;
     border-top: 5px solid white;
-    margin-top:30px;
+    margin-top:10px;
     color:#DDDDDD;
     font-family: Helvetica;
     font-size: 13.5px;
@@ -262,7 +346,42 @@ footer hr{
 
     /* About Section (About) */
 
-
+    .aboutinfo h2{
+        font-size: 42.5px;
+    }
+    .aboutinfo p{
+        font-size: 19px;
+        margin: 7px 0;
+    }
+    .workeducation{
+        margin-left: 70px;
+    }
+    .collegeinfo{
+        margin-top: -20px;
+    }
+    .workeducation .workinfo{
+        margin-top: 20.5px;
+        margin-left: 30px;
+    }
+    .workinfo h3{
+        font-size: 19px;
+    }
+    .workeducation img{
+        width: 85px;
+    }
+    .aboutbutton a{
+        font-size: 19px;
+        line-height: 39px;
+    }
+    .aboutpfp img{
+        display:block;
+        border-radius: 50%;
+        border: 5px solid black;
+        box-shadow: 0px 0px 20px ghostwhite;
+        margin-top: 275px;
+        margin-left: 30%;
+        width: 200px;
+    }
 
     /* Footer Content */
 
@@ -359,9 +478,42 @@ footer hr{
         width:100vw;
         height: 25%;
     }
+    .aboutinfo h2{
+        font-size: 35px;
+    }
+    .aboutinfo p{
+        font-size: 17.5px;
+        margin: 7px 0;
+    }
+    .workeducation{
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    .collegeinfo{
+        margin-top: 10px;
+    }
+    .workeducation .workinfo{
+        margin-top: 20.5px;
+        margin-left: 30px;
+    }
+    .workinfo h3{
+        font-size: 17.5px;
+    }
+    .workeducation img{
+        width: 80px;
+    }
+    .aboutbutton a{
+        font-size: 18px;
+        line-height: 39.5px;
+    }
     .aboutpfp img{
+        display:block;
+        border-radius: 50%;
+        border: 5px solid black;
+        box-shadow: 0px 0px 20px ghostwhite;
+        margin: auto auto;
         width: 150px;
-        margin: -50px auto;
+        margin-bottom: 40px;
     }
 
     /* Footer Content */
