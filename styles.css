@@ -218,7 +218,7 @@ nav ul li a:hover{
     margin-left: 30px;
 }
 
-.workinfo h3{
+.workeducation .workinfo h3{
     font-family: Montserrat, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 20px;
     font-weight: 400;
@@ -363,7 +363,7 @@ footer hr{
         margin-top: 20.5px;
         margin-left: 30px;
     }
-    .workinfo h3{
+    .workeducation .workinfo h3{
         font-size: 19px;
     }
     .workeducation img{
@@ -496,7 +496,7 @@ footer hr{
         margin-top: 20.5px;
         margin-left: 30px;
     }
-    .workinfo h3{
+    .workeducation .workinfo h3{
         font-size: 17.5px;
     }
     .workeducation img{
