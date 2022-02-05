@@ -17,6 +17,10 @@
     display: none;
 }
 
+html {
+    -webkit-text-size-adjust: 100%;
+}
+
 /* Navigation Bar Elements */
 
 nav{
