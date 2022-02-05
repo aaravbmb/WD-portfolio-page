@@ -72,17 +72,18 @@ nav ul li a{
 
 #contact:hover{
     color: #38b6ff;
-    transition: 0.2s;
 }
 
 #blog:hover{
     color: #FF00FF;
-    transition: 0.2s;
 }
 
 nav ul li a:hover{
     color: white;
-    transition: 0.2s;
+}
+
+#contact:hover, #blog.hover, nav ul li a:hover{
+    transition: 0.3s;
 }
 
 .checkbtn{
@@ -102,8 +103,7 @@ nav ul li a:hover{
 /* Welcome Screen (Home) Elements */
 
 #home{
-    background-image: url("./elements/background.svg");
-    background-color: #FF00FF99;
+    background-image: url("./elements/background.svg"),linear-gradient(purple 15%, #FF00FF99);
     background-position: 0% 45%;
     background-size: cover;
     margin: 0 auto;
@@ -253,6 +253,7 @@ nav ul li a:hover{
 .aboutbutton{
     background-color: #FFFFFF33;
     width: 125px;
+    box-shadow: -5px -5px 20px black, -5px -5px 20px #ffffff50;
     border-radius: 20px;
     height: 40px;
     margin: 30px auto;
@@ -276,7 +277,7 @@ nav ul li a:hover{
     display: block;
     border-radius: 50%;
     border: 5px solid black;
-    box-shadow: 0px 0px 20px ghostwhite;
+    box-shadow: 0px 0px 15px ghostwhite;
     margin-left: 30%;
     margin-right: auto;
     margin-top: 175px;
