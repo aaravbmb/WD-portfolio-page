@@ -107,7 +107,7 @@ nav ul li a:hover{
 /* Welcome Screen (Home) Elements */
 
 #home{
-    background-image: url("./elements/background.svg"),linear-gradient(purple 15%, #FF00FF99);
+    background-image: url("./elements/background.svg"),linear-gradient(30deg, #f095e8 25%, #d680ed);
     background-position: 0% 45%;
     background-size: cover;
     margin: 0 auto;
@@ -133,9 +133,10 @@ nav ul li a:hover{
     text-shadow: -1px -1px 0 rgb(0,0,0,75%), 1px -1px 0 rgb(0,0,0,75%), -1px 1px 0 rgb(0,0,0,75%), 1px 1px 0 rgb(0,0,0,75%);
 }
 
-.introtext h1:hover .uxanimate{
-    color: rgb(255,175,255);
-    transition: all 1s;
+.introtext h1 .uxanimate{
+    animation: welcomebreath 5s 3 linear;
+    animation-delay: 1s;
+    color:#db84eb;
 }
 
 .introtext h2{
@@ -291,6 +292,17 @@ nav ul li a:hover{
     height: auto;
 }
 
+/* Work Section (Projects) */
+
+#projects{
+    background-color: yellow;
+    width: 97.5vw;
+    height: 300px;
+    color: white;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 20px;
+}
 /* Footer Content */
 
 footer{
@@ -516,5 +528,25 @@ footer hr{
     }
     footer hr{
         margin-top:10px;
+    }
+}
+
+/* Animations Pane */
+
+@keyframes welcomebreath{
+    0%{
+        color:#db84eb;
+    }
+    25%{
+        color:rgb(255,175,255);
+    }
+    50%{
+        color:white;
+    }
+    75%{
+        color:rgb(255,175,255);
+    }
+    100%{
+        color: #db84eb;
     }
 }
