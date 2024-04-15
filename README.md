@@ -1,1 +1,1 @@
-## Project is under development. Stay tuned for more updates!
+## Front-End Web Development | Personal Portfolio Website
